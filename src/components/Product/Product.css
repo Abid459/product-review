@@ -1,0 +1,8 @@
+.product{
+    border: 1px solid goldenrod;
+    text-align: center;
+    width: 300px;
+}
+.product img{
+   width: 100%;
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "624b260e3e4f1d678e5e7ef1",
+    "index": 0,
+    "price": "$3,330.78",
+    "picture": "./img/Product 1.jfif",
+    "name": "Tapered Baguette Diamond Engagement Ring",
+    "ratting":"5.0"
+  },
+  {
+    "id": "624b260e3717a9fceeb26591",
+    "index": 1,
+    "price": "$2,857.41",
+    "picture": "./img/Product 2.jfif",
+    "name": "Trio Princess Cut Pavé Diamond Engagement Ring",
+    "ratting":"4.9"
+  },
+  {
+    "id": "624b260e5e3a208fa3b87fce",
+    "index": 2,
+    "price": "$3,916.54",
+    "picture":"./img/Product 3.jfif",
+    "name": "Classic Pear Shaped Sapphire Engagement Ring",
+    "ratting":"4.9"
+  }
+]

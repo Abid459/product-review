@@ -1,0 +1,7 @@
+.banner{
+    background-image:url('../../../public/img/banner.webp');
+    height: 400px;
+    background-position: center;
+/* margin-bottom: 300px; */
+/* background: #000; */
+}
