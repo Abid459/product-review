@@ -2,11 +2,12 @@ import React from 'react';
 import './Review.css'
 
 const Review = (props) => {
-    const {name,review} =props.review;
+    const {name,review,ratting} =props.review;
     return (
         <div className='review'>
-            <h3>name: {name}</h3>
+            <h3>Name: {name}</h3>
             <p>{review}</p>
+            <p>Ratting:{ratting}</p>
         </div>
     );
 };

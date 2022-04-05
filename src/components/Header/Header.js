@@ -14,12 +14,10 @@ const Header = () => {
             <nav className='navbar'>
                 <NavLink to={'/'} className={({isActive})=>isActive?'active-nav-link':'nav-item'}>HOME</NavLink>
                 {/* <NavLink to={'/home'} className={({isActive})=>isActive?'active-nav-link':'nav-item'}>HOME</NavLink> */}
-                <NavLink to={'/about'} className={({isActive})=>isActive?'active-nav-link':'nav-item'}>ABOUT</NavLink>
                 <NavLink to={'/reviews'} className={({isActive})=>isActive?'active-nav-link':'nav-item'}>REVIEWS</NavLink>
+                <NavLink to={'/dashboard'} className={({isActive})=>isActive?'active-nav-link':'nav-item'}>DASHBOARD</NavLink> 
                 <NavLink to={'/blogs'} className={({isActive})=>isActive?'active-nav-link':'nav-item'}>BLOGS</NavLink>
-                <NavLink to={'/dashboard'} className={({isActive})=>isActive?'active-nav-link':'nav-item'}>DASHBOARD</NavLink>
-                {/* <NavLink to={'*'} className={({isActive})=>isActive?'active-nav-link':'nav-item'}>404</NavLink> */}
-                
+                <NavLink to={'/about'} className={({isActive})=>isActive?'active-nav-link':'nav-item'}>ABOUT</NavLink>
             </nav>
             <Routes>
                 <Route path='/' element={<Home></Home>}></Route>
