@@ -1,4 +1,16 @@
+.navbar{
+    padding:25px 0;
+    background: #785e4d;
+    margin-top: 20px;
+    text-align: center;
+}
 .navbar a{
     text-decoration: none;
+    color:white;
     margin-right: 10px;
+}
+.active-nav-link{
+    background: #9D8270;
+    padding:30px 10px;
+    border-radius: 5px;
 }
