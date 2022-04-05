@@ -31,7 +31,8 @@ const Home = () => {
             </div>
             <Products products={products}></Products>
             <div>
-                <div className="reviews">
+                    <h2>Customer reviews</h2>    
+                <div className="reviews-home">
 
                     {
                         reviews.map(review => <Review
@@ -40,7 +41,7 @@ const Home = () => {
                         ></Review>)
                     }
                 </div>
-                <button onClick={HandleShowAll}>Show all</button>
+                <button onClick={HandleShowAll}>Show all reviews</button>
             </div>
 
         </div>

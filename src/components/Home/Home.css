@@ -19,3 +19,10 @@ letter-spacing: 2px;
 .banner-info h4{
     letter-spacing: 3px;
 }
+.reviews-home{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+    /* margin-top: 200px; */
+    padding: 20px 90px;
+}
