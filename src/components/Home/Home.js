@@ -3,16 +3,20 @@ import './Home.css'
 import Products from '../Products/Products';
 import useReviews from '../../hooks/useReviews';
 import Review from '../Review/Review';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-    const [products,setProducts] = useState([]);
-    useEffect(()=>{
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
         fetch('products.json')
-        .then(res => res.json())
-        .then(data =>setProducts(data))
-    },[])
-
-    const reviews = useReviews().splice(0,3);
+            .then(res => res.json())
+            .then(data => setProducts(data))
+    }, [])
+    const navigate = useNavigate();
+    const HandleShowAll = () => {
+        navigate('/reviews')
+    }
+    const reviews = useReviews().splice(0, 3);
     return (
         <div>
             <div className="banner">
@@ -26,15 +30,18 @@ const Home = () => {
                 </div>
             </div>
             <Products products={products}></Products>
-            <div className="reviews">
+            <div>
+                <div className="reviews">
 
-            {
-                reviews.map(review =><Review
-                    key={review.id}
-                    review = {review}
-                    ></Review>)
-                }
+                    {
+                        reviews.map(review => <Review
+                            key={review.id}
+                            review={review}
+                        ></Review>)
+                    }
                 </div>
+                <button onClick={HandleShowAll}>Show all</button>
+            </div>
 
         </div>
     );

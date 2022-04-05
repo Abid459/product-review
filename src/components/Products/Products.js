@@ -5,13 +5,17 @@ import './Products.css'
 const Products = ({products}) => {
     // const {}
     return (
-        <div className='products'>
+        <div >
+            <h3>Our best selling Products</h3>
+            <div className='products'>
+
             {
                 products.map(product=><Product
-                key={product.id}
-                product = {product}
-                ></Product>)
-            }
+                    key={product.id}
+                    product = {product}
+                    ></Product>)
+                }
+                </div>
         </div>
     );
 };
