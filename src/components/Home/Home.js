@@ -41,7 +41,7 @@ const Home = () => {
                         ></Review>)
                     }
                 </div>
-                <button onClick={HandleShowAll}>Show all reviews</button>
+                <button className='review-btn' onClick={HandleShowAll}>Show all reviews</button>
             </div>
 
         </div>
